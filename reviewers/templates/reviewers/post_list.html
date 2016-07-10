@@ -5,5 +5,16 @@
      별점 : <input type="text">
 <br>
      한줄평 : <input type="text">
+ <br>
+ 테스트입니다.
+ {{posts}}
+ {% for post in posts %}
+<div>
+ 	published_date : {{ post.published_date }}<br>
+ 	title : {{ post.title }}<br>
+ 	content : {{ post.text|linebreaksbr }}
+ </div>
+ <br>
+ {% endfor %}
 </body>
 </html>
